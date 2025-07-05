@@ -25,14 +25,14 @@ public class UserEntity {
 
     @Column(
             name = "user_name",
-            length = 100,
+            length = 60,
             nullable = false
     )
     private String userName;
 
     @Column(
             name = "user_email",
-            length = 50,
+            length = 40,
             nullable = false,
             unique = true
     )
