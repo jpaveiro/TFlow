@@ -25,8 +25,6 @@ public class RegisterNewUserController {
         var response = usecase.run(request);
         return ResponseEntity
                 .status(response.getStatus())
-                .body(new RegisterNewUserResponse(
-                        response.getStatus(),
-                        response.getMessage()));
+                .body(response);
     }
 }
